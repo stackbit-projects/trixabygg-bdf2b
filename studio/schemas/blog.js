@@ -5,7 +5,7 @@ export default {
     "fields": [
         {
             "type": "string",
-            "name": "titles",
+            "name": "title",
             "title": "Title",
             "description": "The title of the page.",
             "validation": Rule => Rule.required()
