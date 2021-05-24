@@ -16,6 +16,7 @@ export default class Header extends React.Component {
                       <Link href={withPrefix('/')}><img src={withPrefix(_.get(this.props, 'data.config.header.logo_img', null))} alt={_.get(this.props, 'data.config.header.logo_img_alt', null)} /></Link>
                     </p>
                     ) : 
+                    <p className="site-title"><Link href={withPrefix('/')}>{_.get(this.props, 'data.config.header.title', null)}</Link></p>
                     }
                   </div>
                   {_.get(this.props, 'data.config.header.has_nav', null) && (<React.Fragment>
